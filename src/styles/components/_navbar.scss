@@ -79,7 +79,7 @@
             letter-spacing: $mainSpacing;
                 &:hover {
                     color: lighten($color-dark, 40%);
-                    transform: scale(1.1) translateY(-1px);
+                    transform: scale(1.1);
                 }
          }
 

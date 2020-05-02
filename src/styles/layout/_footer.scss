@@ -6,8 +6,8 @@
     color: $color-white;
 
     &__links {
-        @include flex-center;
-        height: 5rem;
+        
+        
         a {
             display: block;
             padding: 1rem 1.25rem;
@@ -17,6 +17,8 @@
             transition: $mainTransition;
             font-weight: bold;
             letter-spacing: $mainSpacing;
+
+            @include flex-center-column;
                 &hover {
                     color: darken($color-white, 40%);
                 }
@@ -24,15 +26,24 @@
     }
 
     &__icons {
-        height: 5rem;
-        @include flex-center;
         line-height: 0;
         margin-bottom: 2rem;
+
+        
         a {
             color: $color-white;
-            margin: 0 .5rem;
-            font-size: 2.4rem;
+            margin: 0 2rem;
+            font-size: 4rem;
         }
+    }
+
+    &__links,
+    &__icons {
+        @include mobile {
+            height: 5rem;
+            @include flex-center;
+        }
+
     }
 
     &__copyright {

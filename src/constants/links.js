@@ -16,6 +16,10 @@ export default [
         text: "blog"
     },
     {
+      path: "/exposicions",
+      text: "exposicions"
+  },
+    {
       path: "/contacte",
       text: "contacte",
     },

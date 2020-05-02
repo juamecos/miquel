@@ -1,17 +1,13 @@
 import React from "react"
-import { FaFacebook, FaInstagramSquare, FaPinterestSquare } from "react-icons/fa"
+import { FaFacebook, FaInstagramSquare} from "react-icons/fa"
 
 export default [
   {
     icon: <FaFacebook />,
-    url: "https://www.facebook.com",
+    url: "https://www.facebook.com/miquel.masmartinez",
   },
   {
     icon: <FaInstagramSquare />,
-    url: "https://www.instagram.com",
-  },
-  {
-    icon: <FaPinterestSquare />,
-    url: "https://www.facebook.com",
-  },
+    url: "https://www.instagram.com/mikimas79/",
+  }
 ]

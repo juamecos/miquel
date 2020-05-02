@@ -1,0 +1,27 @@
+.serie {
+    background-color: lighten($color-secondary, 20%);
+    padding: 4rem 0;
+
+    &__container {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    &__info {
+        text-align: center;
+        font-size: 3rem;
+
+        h3 {
+            color: lighten($color-dark, 10%);
+            & span {
+                color: lighten($color-primary, 10%)
+            }
+        }
+    }
+
+    &__img {
+        margin-bottom: 2rem;
+        box-shadow: $light-shadow;
+    }
+
+}
