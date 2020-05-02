@@ -1,0 +1,107 @@
+.about {
+    padding: 4rem 0;
+
+    &__container {
+        width: 80vw;
+        margin: 0 auto;
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 3rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        @include desktop {
+            width: 95vw;
+            max-width: 1170px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+        box-shadow: $light-shadow;
+
+        @include tablet {
+            max-height: 500px;
+        }
+
+        &>div {
+            box-shadow: $light-shadow;
+        }
+    }
+
+    &__img--wrapper {
+        position: relative;
+        background: radial-gradient(
+            circle, 
+            rgba(255,255,255,1) 0%, 
+            rgba(69,49,93,1) 100%);
+
+        @include tablet {
+            max-height: 500px;
+
+            
+        }
+
+        @include large{
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                border: 3px solid $color-primary;
+                box-sizing: border-box;
+                top: -16px;
+                left: -16px;
+                z-index: -1;
+              }
+        }
+
+        @include desktop {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                border: 3px solid $color-primary;
+                box-sizing: border-box;
+                top: -16px;
+                left: -16px;
+                z-index: -1;
+              }
+        }
+        
+    }
+
+    &__img,
+    &__img--wrapper,
+    &__img--wrapper:before,
+    &__img .gatsby-image-wrapper {
+        height: 100%;
+    }
+
+    &__info {
+        margin-top: 3rem;
+
+        & h4 {
+            font-size: 3.2rem;
+            text-transform: uppercase;
+        }
+
+        & p {
+            margin-bottom: 2.5rem;
+            @include tablet {
+                width: 80%;
+            }
+        }
+
+    }
+
+    &__img,
+    &__info {
+      @include tablet {
+          margin: 0;
+      }
+  }
+}
