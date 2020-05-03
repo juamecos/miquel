@@ -21,14 +21,14 @@ const Navbar = () => {
         <div className="navbar__center">
             <div className="navbar__header">
                 <div className="navbar__logo">MMMart.com</div>
-                <button type="button" className="navbar__mobilmenu" onClick={toggleNav}>
+                <button type="button" className="navbar__mobilmenu" onClick={toggleNav} alt="menu button">
             <FaAlignRight className="navbar__mobilmenu--icon" />
           </button>
             </div>
             <ul className= {navLinksClass}>
           {links.map((item, index) => {
             return (
-              <li key={index} className= "navbar__link">
+              <li key={index} className= "navbar__link" alt={`Link to ${item.path}`}>
                 <AniLink fade to={item.path}>
                   {item.text}
                 </AniLink>
@@ -45,6 +45,7 @@ const Navbar = () => {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                alt={`Link to ${item.url}`}
               >
                 {item.icon}
               </a>

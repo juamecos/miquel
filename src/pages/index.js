@@ -8,6 +8,7 @@ import { graphql } from "gatsby"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Series from "../components/Home/Series"
+import InstaPosts from "../components/Home/InstaPosts"
 
 export default ({ data }) => (
     <Layout>
@@ -23,6 +24,7 @@ export default ({ data }) => (
       </StyledHero>
       <About />
       <Series />
+      <InstaPosts />
     </Layout>
   )
   
