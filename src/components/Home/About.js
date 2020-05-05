@@ -2,6 +2,7 @@ import React from "react"
 import Title from "../Title"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const getAbout = graphql`
     query aboutImage {
@@ -20,7 +21,7 @@ const About = () => {
 
     return (
         <section className="about">
-            <Title title="Quí" subtitle="sóc" />
+            <Title title="Qui" subtitle="sóc" />
             <div className="about__container">
                 <article className="about__img--wrapper">
                     <div className="about__img">
@@ -31,18 +32,24 @@ const About = () => {
                     </div>
                 </article>
                 <article className="about__info">
-                    <h4>m'encanta la pintura</h4>
+                    <h4>M'encanta la pintura</h4>
+                    <p>Sóc Miquel Mas Martinez</p>
                     <p>
-                        M’agrada la pintura com a expresió del meu interior on
-                        puc desemvolupar la meua creativitat sense llimits
+                        M'agrada la pintura com a expressió del meu interior on
+                        puc desenvolupar la meua creativitat sense límits
                     </p>
                     <p>
-                        Aci espose tota la meua colecció de quadres, espere q us
-                        agraden
+                        Ací expose tota la meua col·lecció de quadres, espere
+                        que us agraden
                     </p>
-                    <button type="button" className="btn-primary">
-                        Sèries
-                    </button>
+                    <AniLink
+                        fade
+                        to="/contacte"
+                        type="button"
+                        className="btn-primary"
+                    >
+                        Contacta amb mi
+                    </AniLink>
                 </article>
             </div>
         </section>

@@ -8,14 +8,14 @@ import { graphql } from "gatsby"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Series from "../components/Home/Series"
-import SeriesList from "../components/Series/SeriesList"
+// import SeriesList from "../components/Series/SeriesList"
 
 export default ({ data }) => (
     <Layout>
         <StyledHero home={true} img={data.defaultBcg.childImageSharp.fluid}>
             <Banner
                 title="Benvinguts al meu art"
-                info="Distopia, historia,imaginacio i políticament incorrecte"
+                info="Distòpia, història,imaginació i políticament incorrecte"
             >
                 <AniLink fade to="/series" className="btn-white">
                     Visita les sèries
@@ -23,7 +23,7 @@ export default ({ data }) => (
             </Banner>
         </StyledHero>
         <About />
-        {/* <Series />
+        <Series />
         {/* <InstaPosts /> 
         <SeriesList /> */}
     </Layout>

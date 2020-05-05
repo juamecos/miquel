@@ -9,7 +9,7 @@ const Series = () => {
 
     return (
         <section className="series">
-            <Title title="Ser" subtitle="ies" />
+            <Title title="Sèr" subtitle="ies" />
             <div className="series__center">
                 {series.map(({ node }) => {
                     return <QuadreSerie key={node.contentful_id} serie={node} />
