@@ -2,9 +2,6 @@ import React from "react"
 import Title from "../Title"
 import { useStaticQuery, graphql } from "gatsby"
 import InstaPost from "./InstaPost"
-import links from "../../constants/social-icons"
-
-console.log(links);
 
 const InstaPosts = () => {
     const response = useStaticQuery(getPosts)
