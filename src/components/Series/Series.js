@@ -6,6 +6,7 @@ import QuadreSerie from "./QuadreSerie"
 const Series = () => {
     const response = useStaticQuery(getSeries)
     const series = response.series.edges
+    console.log(series)
 
     return (
         <section className="series">

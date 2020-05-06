@@ -3,9 +3,9 @@
 
     &__center {
         display: grid;
-        grid-template-columns: min-max(35rem, 50rem);
+        grid-template-columns: min-max(30rem, 50rem);
         padding: 2rem;
-        gap: 2rem;
+        gap: 10rem;
         margin: auto;
         padding-bottom: 2rem;
         justify-content: center;
@@ -15,9 +15,9 @@
             grid-template-columns: repeat(2, 400px);
         }
 
-        @include desktop {
-            grid-template-columns: repeat(3, 400px);
-        }
+        // @include desktop {
+        //     grid-template-columns: repeat(3, 1fr);
+        // }
     }
 }
 
@@ -64,7 +64,6 @@
         display: inline-block;
         transition: $mainTransition;
         cursor: pointer;
-        display: none; //llevar quan faça les págines
 
         &:hover {
             background: $color-white;
