@@ -1,5 +1,6 @@
 import React from "react"
 import Title from "../Title"
+
 import { useStaticQuery, graphql } from "gatsby"
 import QuadreSerie from "./QuadreSerie"
 
@@ -10,7 +11,8 @@ const Series = () => {
 
     return (
         <section className="series">
-            <Title title="Sèr" subtitle="ies" />
+            <Title title="Del Roig" subtitle="Al Blau" />
+
             <div className="series__center">
                 {series.map(({ node }) => {
                     return <QuadreSerie key={node.contentful_id} serie={node} />
