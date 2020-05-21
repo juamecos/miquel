@@ -18,7 +18,7 @@ const getSeries = graphql`
                     venut
                     image {
                         fluid {
-                            ...GatsbyContentfulFluid_tracedSVG
+                            ...GatsbyContentfulFluid
                         }
                     }
                     nomDeLaSerie
