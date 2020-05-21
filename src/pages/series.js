@@ -5,8 +5,6 @@ import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 
 const contacte = ({ data }) => {
-    console.log(data)
-
     return (
         <Layout>
             <StyledHero

@@ -34,7 +34,11 @@ const Navbar = () => {
                                 className="navbar__link"
                                 alt={`Link to ${item.path}`}
                             >
-                                <AniLink fade to={item.path}>
+                                <AniLink
+                                    fade
+                                    to={item.path}
+                                    alt={`Link to ${item.text}`}
+                                >
                                     {item.text}
                                 </AniLink>
                             </li>
