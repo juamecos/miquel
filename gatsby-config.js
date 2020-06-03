@@ -46,12 +46,6 @@ module.exports = {
                 accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
             },
         },
-        {
-            resolve: `gatsby-source-instagram`,
-            options: {
-                username: `mikimas79`,
-            },
-        },
 
         `gatsby-plugin-sass`,
         `gatsby-transformer-sharp`,

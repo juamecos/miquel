@@ -24,8 +24,6 @@ export default ({ data }) => (
         </StyledHero>
         <About />
         <Series />
-        {/* <InstaPosts /> 
-        <SeriesList /> */}
     </Layout>
 )
 

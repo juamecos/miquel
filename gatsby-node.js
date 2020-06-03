@@ -23,6 +23,4 @@ exports.createPages = async ({ graphql, actions }) => {
             },
         })
     })
-
-    // data.series.edges.forEach()
 }

@@ -6,7 +6,6 @@ import Layout from "../../src/components/Layout"
 import Image from "gatsby-image"
 
 const Template = ({ data }) => {
-    console.log(data)
     const { titol, image, descripcio, nomDeLaSerie } = data.quadre
     return (
         <Layout>
